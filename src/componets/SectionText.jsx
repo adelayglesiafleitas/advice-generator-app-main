@@ -8,7 +8,6 @@ const SectionText = () => {
   const [id, setId] = useState();
 
   const randNum = Math.random() * 100;
-  console.log(randNum);
 
   const fetchApi = (x) => {
     fetch(`https://api.adviceslip.com/advice/${x}`)
@@ -29,8 +28,6 @@ const SectionText = () => {
   const handleAdvice = () => {
     fetchApi(randNum);
   };
-
-  console.table(data);
 
   return (
     <>
